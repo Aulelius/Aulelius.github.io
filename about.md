@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Info
+permalink: /Info/
 main_nav: true
 ---
 
