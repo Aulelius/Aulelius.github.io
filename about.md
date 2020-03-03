@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Info
-permalink: /Info/
+title: 소개
+permalink: /소개/
 main_nav: true
 ---
 
