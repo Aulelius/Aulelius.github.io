@@ -95,7 +95,7 @@ social:
     username: Aulelius
     url: https://github.com/Aulelius
     desc: Fork me on GitHub
-    share: false
+    share: true
 
   - name: LinkedIn
     icon: linkedin
