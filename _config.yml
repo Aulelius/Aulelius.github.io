@@ -79,7 +79,7 @@ social:
   - name: Twitter
     icon: twitter
     username: 
-    url:""
+    url:
     desc: Follow me on Twitter
     share: true
 
