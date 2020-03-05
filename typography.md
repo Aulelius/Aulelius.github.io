@@ -6,15 +6,11 @@ main_nav: true
 ---
 
 <h1>1. Tripinsite</h1>
-<p class="strapline show">Tripinsite</p> = $0
+<p class="strapline show">Tripinsite</p> 
+<h3 class="show">...</h3>
+<div class= "cont_left"> 
 여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p>
-<div class="mix react" data-my-order="1" style="display: inline-block;" data-bound>
-<div>
-  <div class="card"></div>
-  <div class="text"></div>
-  <div class="button" id="tripinsite">자세히 보기</div>
-  </div>
-  </div>
+
 <img src="/assets/portfolio_img2.jpg" />
 <img src="/assets/portfolio_img1.jpg" />
 <h1>2. 환산취득가액 계산기</h1>
