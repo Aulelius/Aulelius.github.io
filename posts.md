@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "포스트"
-permalink: /포스트/
+title: "posts"
+permalink: /posts/
 main_nav: true
 ---
 
