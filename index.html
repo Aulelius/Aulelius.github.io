@@ -3,86 +3,172 @@ layout: default
 pagination: 
   enabled: true
 ---
-<div class="home">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    	<meta name="author" content="조성용">
+    	<meta name="description" content="조성용의 포트폴리오 정리">
+    	<meta name="keywords" content="웹퍼블리셔, 웹접근성, 반응형사이트, HTML5, WEB">
+    	<title>MyPORTFOLIO</title>
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-  </div>
-</div>
+<!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    
+    
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    
+    
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+        </script>
+   <![endif]-->
+   
+   
+</head>
+<body>
+	
+<div class="progress" id="progress"> 
+		<span class="progress-bar"></span>
+		<span class="progress-text"></span> 
+        <div class="loader">
+            <div class="loader_box"></div>
+            <div class="loader_box"></div>
+        </div> 
+	</div>
 
-<div class="wrapper">
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
+    <!-- //progress -->
+	
+<div id="dot">
+        <ul>
+            <li class="active">
+	    <a href="#"><em class="active"></em><span>HOME</span></a></li>
+            <li><a href="#"><em>02</em><span>소개</span></a></li>
+            <li><a href="#"><em>03</em><span>포스트</span></a></li>
+            <li><a href="#"><em>04</em><span>포트폴리오</span></a></li>
+        </ul>
+    </div>
+    <!-- //dot -->
+	
+<div class="menu-wrapper">
+		<button class="menu-button wrap">
+			<span class="menu-button-item line">
+				<svg viewBox="0 0 80 80" width="100%" height="100%">
+					<path class="est0" d="M65.4 14.8L40.1 4.3 14.8 14.8 4.3 40.2l10.5 25.3L40.2 76l25.3-10.5L76 40.2 65.4 14.8zm-1.1 49.5l-24.2 10-24.1-10L6 40.1l10-24.2L40.1 6l24.2 10 10 24.2-10 24.1z"></path>
+				</svg>
+			</span>
+			<span class="menu-button-item dots">
+				<svg viewBox="0 0 80 80" width="100%" height="100%">	
+					<circle class="dst0" cx="40.1" cy="5.2" r="1.9"></circle>
+					<circle class="dst0" cx="40.1" cy="75.1" r="1.9"></circle>
+					<g>
+						<circle class="dst0" cx="5.1" cy="40.1" r="1.9"></circle>
+						<circle class="dst0" cx="75.1" cy="40.1" r="1.9"></circle>
+					</g>
+				</svg>
+			</span>
+			<span class="menu-button-item base">
+				<svg viewBox="0 0 80 80" id="burger-base" width="100%" height="100%">
+					<path class="cst0" d="M61.3 18.9l-21.2-8.8-21.2 8.8-8.8 21.3 8.8 21.2 21.3 8.7 21.2-8.8 8.7-21.2z"></path>
+				</svg>
+			</span>
+			<div class="icon-wrap">
+			   <div class="icon"></div>
+			</div> 
+		</button>
+	</div>
+	<!-- //menu-wrapper -->
+	
+	<div class="menu-inner">
+		<div class="box-wrap">
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
 
-<nav class="pagination" role="navigation">
-	<p>
-    {% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-			{% else %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-				<span class="fa-stack fa-lg">
-					<i class="fa fa-square fa-stack-2x"></i>
-					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-			{% endif %}
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-		<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-		<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-	</p>
-</nav>
-
-</div>
-</div>
+            <div class="menu">
+                <div id="line">
+                    <div class="line sline"></div>
+                    <div class="line mline"></div>
+                    <div class="line mline"></div>
+                    <div class="line sline"></div>
+                    <div class="hline"></div>
+                </div>
+        	<div class="o_container">
+	    		<div class="menu-left">
+		    		<a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"><span>Kim kang san</span></a><br>
+		    		<a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"><span>kangsane.dothome.co.kr/portfolio</span></a>
+	    		</div>
+	    		<div class="menu-right">
+		    		<a href="#section1"><span>소개</span></a><br>
+		    		<a href="#section2"><span>포스트</span></a><br>
+		    		<a href="#section3"><span>포트폴리오</span></a><br>
+	    		</div>
+		    </div>
+		</div>
+        </div>
+	</div>
+	<!-- //menu-inner -->
+    
+    <nav id="nav">
+        <h1>
+            <svg fill="#3EE7AC" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 175 70" enable-background="new 0 0 175 70" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.514,33.466c-1.08-0.675-4.24-4.359-4.131-9.71
+                  c0.028-1.396-0.204-3.069,0.287-4.119c0.599-1.281,2.363-1.711,2.558-3.588c0.296-2.852-1.145-3.052-2.587-3.083
+                  c-0.061-0.001-5.384,0-6.466,0c-1.064,0-6.658-0.006-6.725,0c-1.041,0.085-2.804,0.493-2.587,3.34
+                  c0.147,1.925,2.07,2.017,2.587,3.34c0.518,1.328,0.248,2.637,0.259,4.111c0.042,5.759-3.275,9.012-4.402,9.717
+                  C3.715,36.976,0,43.166,0,50.218C0,61.143,8.917,70,19.917,70s19.917-8.857,19.917-19.782
+                  C39.833,43.161,36.113,36.967,30.514,33.466z M21.694,22.379c0.836,0,1.514,0.68,1.514,1.52c0,0.839-0.678,1.52-1.514,1.52
+                  c-0.836,0-1.514-0.68-1.514-1.52C20.18,23.06,20.858,22.379,21.694,22.379z M18.162,17.313c0.557,0,1.009,0.454,1.009,1.013
+                  c0,0.56-0.452,1.013-1.009,1.013s-1.009-0.454-1.009-1.013C17.153,17.767,17.605,17.313,18.162,17.313z M17.522,28.608
+                  c1.462,0,2.647,1.186,2.647,2.65c0,1.464-1.185,2.65-2.647,2.65c-1.462,0-2.647-1.186-2.647-2.65
+                  C14.874,29.795,16.06,28.608,17.522,28.608z M20.043,67.476c-9.538,0-17.269-7.74-17.269-17.288c0-6.466,2.62-10.787,6.807-13.755
+                  c2.103-1.491,5.664-1.066,8.824,0.757c2.048,1.182,4.817,4.354,12.081,2.732c0.885-0.198,1.619-0.02,2.819,0.017
+                  c2.315,1.048,3.791,4.448,4.009,10.249C37.67,59.729,29.58,67.476,20.043,67.476z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.978,8.846c0.611,0,1.106,0.495,1.106,1.106
+                c0,0.611-0.495,1.106-1.106,1.106c-0.611,0-1.106-0.495-1.106-1.106C21.872,9.341,22.367,8.846,22.978,8.846z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.975,6.266c0.814,0,1.474,0.66,1.474,1.474
+                s-0.66,1.474-1.474,1.474c-0.814,0-1.474-0.66-1.474-1.474S15.16,6.266,15.975,6.266z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"  d="M21.688,0c1.12,0,2.027,0.908,2.027,2.027
+                s-0.908,2.027-2.027,2.027c-1.12,0-2.027-0.908-2.027-2.027S20.568,0,21.688,0z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.987,37.261c5.662-0.872,10.45,0.53,13.596,2.822
+                  c-6.125,0.375-9.356,1.404-14.771-2.639C19.145,37.657,19.594,37.322,19.987,37.261z"/>
+            </svg>
+            <span class="name">KANGSAN</span>
+            <span class="sname">PORTFOLIO</span>
+        </h1>
+    </nav>
+    <!-- //nav -->
