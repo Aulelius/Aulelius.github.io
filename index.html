@@ -4,86 +4,20 @@ pagination:
   enabled: true
 ---
 
-<div class="home">
+<h1>1. Tripinsite</h1>
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-  </div>
-</div>
-
-<div class="wrapper">
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ 포트폴리오.url | prepend: site.baseurl }}">{{ 포트폴리오.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ 포트폴리오.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if 포트폴리오.categories.size > 0 %}in {% for cat in 포트폴리오.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <a href="{{ site.baseurl }}/포트폴리오/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<nav class="pagination" role="navigation">
-	<p>
-    {% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-			{% else %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-				<span class="fa-stack fa-lg">
-					<i class="fa fa-square fa-stack-2x"></i>
-					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-			{% endif %}
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-		<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-		<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-	</p>
-</nav>
-
-</div>
-</div>
+<h4><p>여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p></h4>
+<p> 프로젝트 기간 : 2019년 5월 17일 ~ 2019년 7월 19일 </p>
+<p> 운영환경 : Apache Tomcat 8.5 </p>
+<p> 프론트엔드 : CSS, JS, HTML, Bootstrap, jQuery, Ajax </p>
+<p> 백엔드 : JSP, Java, mybatis, MySQL </p>
+<p> 프레임워크 : Spring Framework </p> 
+<p> 사용툴 : Eclipse IDE </p> 
+<p> 사용API : 국내 관광정보 서비스 API, 다음 맵 API </p>  
+<h5>메인화면</h5>
+<img src="/assets/portfolio_img2.jpg" />
+<h5>추천 스토리 보기</h5>
+<img src="/assets/portfolio_img1.jpg" />
+<h5>지역을 검색하여 관광지 검색</h5>
+<img src="/assets/portfolio_img3.jpg" />
+<!-- // Tripinsite -->
