@@ -7,12 +7,13 @@ main_nav: true
 
 <h1>1. Tripinsite</h1>
 
-<h3><p>여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p></h3>
+<h4><p>여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p></h4>
 <h5>메인화면</h5>
 <img src="/assets/portfolio_img2.jpg" />
 <h5>추천 스토리 보기</h5>
 <img src="/assets/portfolio_img1.jpg" />
-
+<h5>지역을 검색하여 관광지 검색</h5>
+<img src="/assets/portfolio_img3.jpg" />
 <!-- // Tripinsite -->
 
 
