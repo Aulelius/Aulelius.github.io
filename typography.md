@@ -10,7 +10,7 @@ main_nav: true
 <h3><p>여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p></h3>
 <h5>메인화면</h5>
 <img src="/assets/portfolio_img2.jpg" />
-<h5>관광지 검색</h5>
+<h5>추천 스토리 보기</h5>
 <img src="/assets/portfolio_img1.jpg" />
 
 <!-- // Tripinsite -->
@@ -20,8 +20,11 @@ main_nav: true
 <h1>2. 환산취득가액 계산기</h1>
 
 <p>부동산 거래시 환산취득가액에 대한 계산과 년도별에 따른 취득당시 기준시가 계산과 법정동 코드로 검색하는 공시지가 조회 기능을 가지고 있는 안드로이드 어플입니다. </p>
+<h5>메인화면</h5>
 <img src="/assets/myportfolio_img1.jpg" />
+<h5>환산취득가액 계산기</h5>
 <img src="/assets/myportfolio_img2.jpg" />
+<h5>공시지가 조회</h5>
 <img src="/assets/myportfolio_img3.jpg" />
 
 <!-- MyCalculator -->
