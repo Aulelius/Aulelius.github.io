@@ -6,7 +6,7 @@ main_nav: true
 ---
 
 <h1>1. Tripinsite</h1>
-<p>
+<p class="strapline show">Tripinsite</p> = $0
 여행객들이 자신이 원하는 관광, 맛집기행과 같은 테마에 맞춰 다른사람들의 여행일정을 검색하고 한국관광공사에서 제공하는 데이터를 활용하여 정확한 관광지 정보를 얻게 하였습니다.</p>
 <div class="mix react" data-my-order="1" style="display: inline-block;" data-bound>
 <div>
