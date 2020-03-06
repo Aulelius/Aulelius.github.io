@@ -1899,9 +1899,14 @@ footer .footnote .highlight {
   <body>	     
 <div class="overflow-wrap">
       <!-- HOME -->
-      <div class="modal-wrap flex">
-        <div class="mask"></div>
-        <div class="modal" id="modal">
+      <div class="modal-wrap flex"><div class="mask"></div>
+	      <div class="modal" id="modal" style="max-width: 700px;"></div>
+	</div>
+	<section id="home" class="flex height-fix">
+		<div id="pt" class=canvas">
+		<canvas id="canvas" width="1000" height="1327" style="width: 1000px; height: 1327px;">
+	  </div>
+	  <div class="flex"></div>
           <div class="carousel-wrap">
             <div class="window">
               <div id="carousel">
@@ -1927,8 +1932,7 @@ footer .footnote .highlight {
 	</div>
       </div>
 	
-	<section id="home" class="flex height-fix">
-        <div id="pt" class="canvas"></div>
+	
         <div class="flex">
           <div class="text">
             안녕하세요 <span class="highlight"> 저는 조성용입니다. </span>
@@ -1951,7 +1955,7 @@ footer .footnote .highlight {
       </section>	
 
 <!-- ABOUT -->
-      <section id="능력">
+      <section id="about">
         <div class="container flex">
           <div class="header waypoint" data-animation="slide-in-left">
             ABOUT
