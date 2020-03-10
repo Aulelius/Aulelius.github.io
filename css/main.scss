@@ -5,9 +5,10 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Includes Bourbon, Neat, and Bitters (thanks, thoughtbot!)
+
 @import
   "bourbon/bourbon",
   "base/base",
   "neat/neat",
   "layout"
-;
+  url('https://fonts.googleapis.com/css?family=Sunflower:500');
