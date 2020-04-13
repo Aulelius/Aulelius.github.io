@@ -204,7 +204,12 @@ body{
   height: 222px;
 }
 
-/* board */
+/* footer */
+#my_github{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
